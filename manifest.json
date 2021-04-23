@@ -1,0 +1,22 @@
+{
+  "name": "GitHub Hide Whitespace",
+  "description": "Redirects PR's to automatically hide whitespace changes.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://github.com/*",
+    "*://www.github.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "rules_1",
+        "enabled": true,
+        "path": "rules_1.json"
+      }
+    ]
+  }
+}
